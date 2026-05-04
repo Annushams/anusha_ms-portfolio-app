@@ -6,7 +6,7 @@ import { motion } from 'motion/react'
 const Services = ({ isDarkMode }) => {
   return (
     <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }}
-      id="services" className='w-full px-[12%] py-10 scroll-mt-20'>
+      id="services" className='w-full px-[12%] py-5 scroll-mt-20'>
 
       <motion.h4 initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }}
         className='text-center mb-2 text-lg font-Ovo'>What I Offer</motion.h4>
@@ -30,9 +30,9 @@ const Services = ({ isDarkMode }) => {
             <Image src={icon} alt="Service Icon" className='w-10' />
             <h3 className='text-lg my-4 text-gray-700 dark:text-white'>{title}</h3>
             <p className='text-sm text-gray-600 leading-5 dark:text-white/80'>{description}</p>
-            <a href={link} className='flex items-center gap-2 text-sm mt-5'>
+            {/* <a href={link} className='flex items-center gap-2 text-sm mt-5'>
               Read more <Image src={isDarkMode ? assets.right_arrow_white : assets.right_arrow} alt="Right Arrow" className='w-4' />
-            </a>
+            </a> */}
 
           </motion.div>
 

@@ -10,7 +10,7 @@ const ovo = Ovo({
 });
 
 export const metadata = {
-  title: "Portfolio Anusha",
+  title: "Anusha M S",
   description: "Fullstack Developer",
 };
 

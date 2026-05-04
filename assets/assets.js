@@ -35,8 +35,18 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import performance_icon from './performance_icon.png';
+import code_icon_service from './code_icon_service.png';
+import behance_logo from './behance_logo.png';
+import tailwind_logo from './tailwind_icon.png';
+import react_icon from './react.svg';
+import js_icon from './js_icon.png';
 
 export const assets = {
+    react_icon,
+    behance_logo,
+    tailwind_logo,
+    js_icon,
     user_image,
     code_icon,
     code_icon_dark,
@@ -73,38 +83,88 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    performance_icon,
+    code_icon_service
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
-    },
-    {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
-    },
-    {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
-    },
-]
+    id: "work1",
+    title: "Workflow Builder",
+    description: "Enterprise UI Platform",
+    details:
+      "Developed a visual workflow builder that empowers users to create and manage complex processes through a highly intuitive drag-and-drop interface. Emphasized clarity in interaction design, real-time visual feedback, and seamless state management to handle dynamic logic effortlessly. The UI/UX was recognized and appreciated by stakeholders for making complex workflows feel simple and approachable, significantly improving efficiency and user confidence.",
+    bgImage: "/work-2.png",
+    link: "#",
+    type: "web",
+    showIcon: false
+  },
+  {
+    id: "work2",
+    title: "Customer Lifecycle Dashboard",
+    description: "Enterprise UI Platform",
+    details:
+      "Designed and built a customer lifecycle dashboard that translates complex data into clear, actionable insights. Focused on intuitive visual hierarchies, meaningful interactions, and responsive performance to ensure users can quickly understand and act on lifecycle states. Optimized data flow and rendering to maintain smooth performance at scale, improving usability and adoption across business teams.",
+    bgImage: "/work-1.png",
+    link: "#",
+    type: "web",
+    showIcon: false
+  },
+  {
+    id: "work3",
+    title: "Unified Application Portal",
+    description: "Enterprise UI Platform",
+    details:
+      "Built a unified application portal that brings multiple enterprise systems into a cohesive and consistent user experience. Focused on modular architecture, scalable UI patterns, and seamless navigation across products. Implemented secure access flows with SSO, ensuring both usability and security. The result is a streamlined interface that reduces friction and simplifies how users interact with complex systems.",
+    bgImage: "/work-3.png",
+    link: "#",
+    type: "web",
+    showIcon: false
+  },
+  {
+    id: "work4",
+    title: "UI/UX Design",
+    description: "Figma Designs",
+    details:
+      "Crafted thoughtful UI/UX designs in Figma with a strong emphasis on clarity, usability, and visual consistency. Designed interfaces that balance aesthetics with function, ensuring intuitive navigation and meaningful interactions. Focused on creating scalable design patterns that translate seamlessly into development, resulting in cohesive and user-friendly digital experiences.",
+    bgImage: "/work-4.png",
+    link: "https://www.figma.com/proto/EZ18DacZiqZba0EaFv8UgA/Simple-Prototype?node-id=0-1&t=dJL3G9LB5MDlTM09-1",
+    type: "figma",
+    showIcon: true
+  },
+];
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
+    {
+        icon: assets.web_icon,
+        title: "Frontend Development",
+        description:
+            "Building scalable, high-performance applications using React.js, Next.js, and modern JavaScript (ES6+).",
+        link: "#work",
+    },
+    {
+        icon: assets.ui_icon,
+        title: "UI/UX Design",
+        description:
+            "Designing intuitive, user-centric interfaces with a focus on usability, accessibility, and seamless user experience.",
+        link: "#work",
+    },
+    {
+        icon: assets.code_icon_service,
+        title: "API Integration",
+        description:
+            "Integrating REST APIs, GraphQL, and real-time systems with secure and efficient data handling.",
+        link: "#work",
+    },
+    {
+        icon: assets.performance_icon,
+        title: "Performance Optimization",
+        description:
+            "Enhancing application performance using lazy loading, memoization, and optimized rendering strategies.",
+        link: "#work",
+    },
+];
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
@@ -112,6 +172,14 @@ export const infoList = [
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 
+//add enpot and Dribbble icons to toolsData
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    { icon: assets.js_icon, name: "JavaScript" },
+    { icon: assets.react_icon, name: "React" },
+    { icon: assets.figma, name: "Figma" },
+    { icon: assets.behance_logo, name: "Behance" },
+    { icon: assets.tailwind_logo, name: "Tailwind CSS" },
+    { icon: assets.git, name: "Git" },
+    { icon: assets.vscode, name: "VS Code" },
+    { icon: assets.mongodb, name: "MongoDB" },
 ];
